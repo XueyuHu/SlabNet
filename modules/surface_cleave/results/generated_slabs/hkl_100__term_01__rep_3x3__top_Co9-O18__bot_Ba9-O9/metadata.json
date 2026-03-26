@@ -1,0 +1,23 @@
+{
+  "slab_id": "hkl_100__term_01__rep_3x3__top_Co9-O18__bot_Ba9-O9",
+  "miller_index": "1,0,0",
+  "shift": 0.25,
+  "formula": "BaCoO3",
+  "natoms": 135,
+  "surface_a_A": 11.944779,
+  "surface_b_A": 11.944779,
+  "surface_area_A2": 142.677745358841,
+  "repeat_a": 3,
+  "repeat_b": 3,
+  "min_lateral_target_A": 8.0,
+  "min_surface_area_target_A2": 64.0,
+  "slab_scale_factor": "0,1,0;0,0,1;1,0,0",
+  "top_termination": "Co9-O18",
+  "bottom_termination": "Ba9-O9",
+  "is_symmetric": false,
+  "is_polar": false,
+  "n_fixed_bottom_half": 63,
+  "output_dir": "hkl_100__term_01__rep_3x3__top_Co9-O18__bot_Ba9-O9",
+  "cif_file": "hkl_100__term_01__rep_3x3__top_Co9-O18__bot_Ba9-O9/slab.cif",
+  "relax_ready_vasp": "hkl_100__term_01__rep_3x3__top_Co9-O18__bot_Ba9-O9/slab_relax_ready.vasp"
+}

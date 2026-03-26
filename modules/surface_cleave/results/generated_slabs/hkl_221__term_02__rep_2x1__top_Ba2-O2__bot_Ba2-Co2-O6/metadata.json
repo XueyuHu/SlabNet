@@ -1,0 +1,23 @@
+{
+  "slab_id": "hkl_221__term_02__rep_2x1__top_Ba2-O2__bot_Ba2-Co2-O6",
+  "miller_index": "2,2,1",
+  "shift": 0.1250000000000001,
+  "formula": "Ba8Co7O22",
+  "natoms": 74,
+  "surface_a_A": 11.261645640899557,
+  "surface_b_A": 8.90311260673732,
+  "surface_area_A2": 95.11849690589398,
+  "repeat_a": 2,
+  "repeat_b": 1,
+  "min_lateral_target_A": 8.0,
+  "min_surface_area_target_A2": 64.0,
+  "slab_scale_factor": "-1,1,0;-1,0,2;1,0,0",
+  "top_termination": "Ba2-O2",
+  "bottom_termination": "Ba2-Co2-O6",
+  "is_symmetric": false,
+  "is_polar": false,
+  "n_fixed_bottom_half": 32,
+  "output_dir": "hkl_221__term_02__rep_2x1__top_Ba2-O2__bot_Ba2-Co2-O6",
+  "cif_file": "hkl_221__term_02__rep_2x1__top_Ba2-O2__bot_Ba2-Co2-O6/slab.cif",
+  "relax_ready_vasp": "hkl_221__term_02__rep_2x1__top_Ba2-O2__bot_Ba2-Co2-O6/slab_relax_ready.vasp"
+}

@@ -5,7 +5,7 @@ import json
 import math
 import os
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from copy import deepcopy
 from pathlib import Path
 
@@ -40,13 +40,45 @@ def format_counter(counter: Counter) -> str:
     return "-".join(f"{key}{counter[key]}" for key in sorted(counter))
 
 
-def termination_counters(slab: Slab, frac_tol: float = 0.08) -> tuple[Counter, Counter]:
-    z = np.array([site.frac_coords[2] for site in slab])
-    zmax = float(z.max())
-    zmin = float(z.min())
-    top = Counter(species_symbol(site) for site in slab if zmax - float(site.frac_coords[2]) <= frac_tol)
-    bottom = Counter(species_symbol(site) for site in slab if float(site.frac_coords[2]) - zmin <= frac_tol)
+def grouped_z_layers(slab: Slab, layer_tol: float = 0.03) -> list[tuple[float, list]]:
+    entries = sorted((float(site.frac_coords[2]), site) for site in slab)
+    groups: list[list] = []
+    for z, site in entries:
+        if not groups or abs(z - groups[-1][0][0]) > layer_tol:
+            groups.append([(z, site)])
+        else:
+            groups[-1].append((z, site))
+    out = []
+    for group in groups:
+        z_mean = sum(z for z, _ in group) / len(group)
+        out.append((z_mean, [site for _, site in group]))
+    return out
+
+
+def termination_counters(slab: Slab, layer_tol: float = 0.03) -> tuple[Counter, Counter]:
+    layers = grouped_z_layers(slab, layer_tol=layer_tol)
+    bottom_sites = layers[0][1]
+    top_sites = layers[-1][1]
+    top = Counter(species_symbol(site) for site in top_sites)
+    bottom = Counter(species_symbol(site) for site in bottom_sites)
     return top, bottom
+
+
+def slab_is_stoichiometric_against_bulk(slab: Slab, bulk_structure: Structure) -> tuple[bool, float | None]:
+    bulk_comp = bulk_structure.composition.as_dict()
+    slab_comp = slab.composition.as_dict()
+    elements = sorted(set(bulk_comp) | set(slab_comp))
+    ratios = []
+    for el in elements:
+        b = bulk_comp.get(el, 0.0)
+        s = slab_comp.get(el, 0.0)
+        if abs(b) < 1e-12:
+            return False, None
+        ratios.append(s / b)
+    first = ratios[0]
+    if all(abs(r - first) < 1e-8 for r in ratios[1:]):
+        return True, float(first)
+    return False, None
 
 
 def freeze_bottom_half(atoms: Atoms) -> list[int]:
@@ -184,10 +216,18 @@ def score_surface_library(
         gamma_eva2 = None
         gamma_jm2 = None
         n_formula_units = None
-        if slab_formula == bulk_formula:
-            n_formula_units = slab_factor / bulk_factor
+        energy_mode = ""
+        is_bulk_stoich, bulk_multiple = slab_is_stoichiometric_against_bulk(record["_slab"], bulk_structure)
+        if is_bulk_stoich and bulk_multiple is not None:
+            n_formula_units = bulk_multiple
             gamma_eva2 = (slab_metrics["final_energy_eV"] - n_formula_units * bulk_energy_per_fu) / (2.0 * record["surface_area_A2"])
             gamma_jm2 = gamma_eva2 * SURFACE_ENERGY_J_PER_M2_PER_EV_PER_A2
+            energy_mode = "bulk_formula_reference"
+        else:
+            bulk_energy_per_atom = bulk_metrics["final_energy_eV"] / len(bulk_atoms)
+            gamma_eva2 = (slab_metrics["final_energy_eV"] - len(record["_slab"]) * bulk_energy_per_atom) / (2.0 * record["surface_area_A2"])
+            gamma_jm2 = gamma_eva2 * SURFACE_ENERGY_J_PER_M2_PER_EV_PER_A2
+            energy_mode = "per_atom_bulk_heuristic"
 
         new_record = {
             **record,
@@ -200,6 +240,7 @@ def score_surface_library(
             "slab_relax_steps": slab_metrics["n_steps"],
             "slab_max_force_eVA": slab_metrics["max_force_eVA"],
             "slab_converged": slab_metrics["converged"],
+            "surface_energy_mode": energy_mode,
             "surface_energy_eV_A2": gamma_eva2,
             "surface_energy_J_m2": gamma_jm2,
             "relaxed_cif_file": f"{record['output_dir']}/slab_relaxed.cif",
@@ -302,6 +343,7 @@ def write_summary(records: list[dict], output_dir: Path) -> None:
             "slab_relax_steps",
             "slab_max_force_eVA",
             "slab_converged",
+            "surface_energy_mode",
             "surface_energy_eV_A2",
             "surface_energy_J_m2",
             "surface_energy_rank",
@@ -353,21 +395,57 @@ def generate_surface_library(
     records = []
     hkl_counts: dict[tuple[int, int, int], int] = {}
     for slab in slabs:
-        hkl = tuple(int(x) for x in slab.miller_index)
-        hkl_counts[hkl] = hkl_counts.get(hkl, 0) + 1
-        term_no = hkl_counts[hkl]
-        na, nb = choose_inplane_repeats(slab, min_lateral_size, min_surface_area, max_repeat)
-        slab = expand_slab_inplane(slab, na, nb)
-        hkl_label = "".join(str(x) for x in hkl)
-        top, bottom = termination_counters(slab)
-        slab_id = (
-            f"hkl_{hkl_label}"
-            f"__term_{term_no:02d}"
-            f"__rep_{na}x{nb}"
-            f"__top_{format_counter(top)}"
-            f"__bot_{format_counter(bottom)}"
-        )
-        records.append(slab_record(slab, slab_id, output_dir, na, nb, min_lateral_size, min_surface_area))
+        derived = [slab]
+        try:
+            generator = slab.oriented_unit_cell is not None  # dummy to keep try narrow
+            del generator
+            from pymatgen.core.surface import SlabGenerator
+
+            sg = SlabGenerator(
+                structure,
+                tuple(int(x) for x in slab.miller_index),
+                min_slab_size=min_slab_size,
+                min_vacuum_size=min_vacuum_size,
+                center_slab=center_slab,
+                primitive=primitive,
+                max_normal_search=max_normal_search,
+            )
+            derived.extend(sg.nonstoichiometric_symmetrized_slab(slab))
+        except Exception:
+            pass
+
+        unique_slabs: list[Slab] = []
+        seen_keys: set[tuple] = set()
+        for candidate in derived:
+            top0, bottom0 = termination_counters(candidate)
+            key = (
+                tuple(int(x) for x in candidate.miller_index),
+                round(float(candidate.shift), 6),
+                tuple(sorted(top0.items())),
+                tuple(sorted(bottom0.items())),
+                len(candidate),
+            )
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            unique_slabs.append(candidate)
+
+        for candidate in unique_slabs:
+            hkl = tuple(int(x) for x in candidate.miller_index)
+            hkl_counts[hkl] = hkl_counts.get(hkl, 0) + 1
+            term_no = hkl_counts[hkl]
+            na, nb = choose_inplane_repeats(candidate, min_lateral_size, min_surface_area, max_repeat)
+            candidate = expand_slab_inplane(candidate, na, nb)
+            hkl_label = "".join(str(x) for x in hkl)
+            top, bottom = termination_counters(candidate)
+            slab_id = (
+                f"hkl_{hkl_label}"
+                f"__term_{term_no:02d}"
+                f"__rep_{na}x{nb}"
+                f"__top_{format_counter(top)}"
+                f"__bot_{format_counter(bottom)}"
+            )
+            records.append(slab_record(candidate, slab_id, output_dir, na, nb, min_lateral_size, min_surface_area))
 
     if score_model:
         records = score_surface_library(

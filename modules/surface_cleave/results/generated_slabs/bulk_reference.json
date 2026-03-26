@@ -6,7 +6,7 @@
   "initial_energy_eV": -33.35948944091797,
   "final_energy_eV": -33.35948944091797,
   "n_steps": 0,
-  "max_force_eVA": 4.432127411746478e-07,
+  "max_force_eVA": 6.9223466425683e-07,
   "converged": true,
   "model_dir": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\matgl\\pretrained_models\\CHGNet-MatPES-PBE-2025.2.10-2.7M-PES"
 }
