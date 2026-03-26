@@ -10,7 +10,31 @@ SlabNet is a surface-science workflow repository for building slab models, searc
 - reaction-network construction from retained intermediates
 - structural energy-profile generation for complete and partial pathways
 
-## Included module
+## Included modules
+
+### `modules/surface_cleave`
+
+This module starts from a bulk structure and enumerates low-index slab terminations for later surface studies.
+
+- reads the bulk structure from `surface_cleave/POSCAR.cif` by default
+- generates low-index slabs up to a chosen Miller cutoff
+- saves every returned termination
+- writes both `slab.cif` and a bottom-fixed `slab_relax_ready.vasp`
+- records polarity, symmetry, and termination labels in a summary table
+
+Example commands:
+
+```bash
+python -m modules.surface_cleave generate
+python -m modules.surface_cleave overview
+python -m modules.surface_cleave list
+```
+
+Current packaged cleave snapshot for `BaCoO3`:
+
+- generated slab terminations: `6`
+- unique low-index surfaces: `6`
+- output summary: `modules/surface_cleave/results/generated_slabs/summary.csv`
 
 ### `modules/intermediate_search`
 
@@ -43,6 +67,8 @@ python -m modules.intermediate_search files
 
 ## Key assets
 
+- cleave module overview: `modules/surface_cleave/README.md`
+- cleave summary table: `modules/surface_cleave/results/generated_slabs/summary.csv`
 - module overview: `modules/intermediate_search/README.md`
 - workflow notes: `modules/intermediate_search/docs/workflow.md`
 - merged pathway list: `modules/intermediate_search/results/merged_network/all_paths.txt`
@@ -65,4 +91,3 @@ That means the repo keeps:
 - packaged network/profile outputs
 
 and avoids committing heavyweight caches, model stores, and unrelated training artifacts.
-

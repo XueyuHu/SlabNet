@@ -1,0 +1,17 @@
+{
+  "slab_id": "hkl_110__term_01__top_Ba1-Co1-O3__bot_Ba1-Co1-O3",
+  "miller_index": "1,1,0",
+  "shift": 0.24999999999999994,
+  "formula": "BaCoO3",
+  "natoms": 20,
+  "surface_area_A2": 22.419644726143098,
+  "slab_scale_factor": "0,0,-1;1,-1,0;-1,0,0",
+  "top_termination": "Ba1-Co1-O3",
+  "bottom_termination": "Ba1-Co1-O3",
+  "is_symmetric": true,
+  "is_polar": true,
+  "n_fixed_bottom_half": 8,
+  "output_dir": "hkl_110__term_01__top_Ba1-Co1-O3__bot_Ba1-Co1-O3",
+  "cif_file": "hkl_110__term_01__top_Ba1-Co1-O3__bot_Ba1-Co1-O3/slab.cif",
+  "relax_ready_vasp": "hkl_110__term_01__top_Ba1-Co1-O3__bot_Ba1-Co1-O3/slab_relax_ready.vasp"
+}

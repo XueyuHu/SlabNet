@@ -1,0 +1,17 @@
+{
+  "slab_id": "hkl_210__term_01__top_Ba1-Co2-O5__bot_Ba2-Co1-O4",
+  "miller_index": "2,1,0",
+  "shift": 0.12500000000000006,
+  "formula": "BaCoO3",
+  "natoms": 30,
+  "surface_area_A2": 35.44857083319707,
+  "slab_scale_factor": "0,0,-1;1,-2,0;-1,0,0",
+  "top_termination": "Ba1-Co2-O5",
+  "bottom_termination": "Ba2-Co1-O4",
+  "is_symmetric": false,
+  "is_polar": false,
+  "n_fixed_bottom_half": 15,
+  "output_dir": "hkl_210__term_01__top_Ba1-Co2-O5__bot_Ba2-Co1-O4",
+  "cif_file": "hkl_210__term_01__top_Ba1-Co2-O5__bot_Ba2-Co1-O4/slab.cif",
+  "relax_ready_vasp": "hkl_210__term_01__top_Ba1-Co2-O5__bot_Ba2-Co1-O4/slab_relax_ready.vasp"
+}
