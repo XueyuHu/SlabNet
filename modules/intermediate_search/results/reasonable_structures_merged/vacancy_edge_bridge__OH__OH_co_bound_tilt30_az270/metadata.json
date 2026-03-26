@@ -1,0 +1,22 @@
+{
+  "case_id": 141,
+  "family": "vacancy_edge_bridge__OH",
+  "label": "OH_co_bound_tilt30_az270",
+  "formula": "HBa16Co16O48",
+  "natoms": 81,
+  "energy_per_atom_eV": -6.608613190827547,
+  "stage": "final",
+  "initial_energy_eV": -532.0550537109375,
+  "final_energy_eV": -535.2976684570312,
+  "n_steps": 400,
+  "max_force_eVA": 0.009942770004272461,
+  "converged": true,
+  "site": "vacancy_edge_bridge",
+  "co_idx": 3,
+  "state": "OH",
+  "orientation": "co_bound_tilt30_az270",
+  "reaction_neighbors": "+O:OOH;+H:H2O;-H:O",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8671745968278177,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_edge_bridge__OH\\OH_co_bound_tilt30_az270\\relaxed.cif"
+}

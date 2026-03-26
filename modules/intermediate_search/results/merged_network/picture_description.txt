@@ -1,0 +1,20 @@
+Picture description
+The combined profile overlays 76 reaction lines from OO* starts across 7 surface contexts.
+Solid lines terminate at H2O* and dashed lines terminate early at the last reasonable intermediate.
+In the merged dataset, 19 paths are complete and 57 paths remain partial.
+
+Context summary
+- direct_co_o_bridge: 9 paths, 2 complete, 7 partial, terminal states = H2O*, H2O2*, O*, OOH*.
+- direct_co_top: 5 paths, 1 complete, 4 partial, terminal states = H2O*, H2O2*, O*, OOH*.
+- direct_hollow: 4 paths, 2 complete, 2 partial, terminal states = H2O*, O*, OOH*.
+- vacancy_center: 18 paths, 4 complete, 14 partial, terminal states = H2O*, H2O2*, O*, OOH*.
+- vacancy_co_top_13: 18 paths, 4 complete, 14 partial, terminal states = H2O*, H2O2*, O*, OOH*.
+- vacancy_co_top_3: 18 paths, 4 complete, 14 partial, terminal states = H2O*, H2O2*, O*, OOH*.
+- vacancy_edge_bridge: 4 paths, 2 complete, 2 partial, terminal states = H2O*, O*, OOH*.
+
+Most stabilized final lines
+- path_25 [vacancy_center] ends at -10.031 eV relative to its OO* start: OO* -> OOH* -> OH* -> H2O* -> H2O2*.
+- path_26 [vacancy_center] ends at -10.031 eV relative to its OO* start: OO* -> OOH* -> OH* -> H2O* -> H2O2*.
+- path_27 [vacancy_center] ends at -10.031 eV relative to its OO* start: OO* -> OOH* -> OH* -> H2O* -> H2O2*.
+- path_28 [vacancy_center] ends at -10.031 eV relative to its OO* start: OO* -> OOH* -> OH* -> H2O* -> H2O2*.
+- path_62 [vacancy_co_top_3] ends at -9.774 eV relative to its OO* start: OO* -> OOH* -> OH* -> H2O* -> H2O2*.

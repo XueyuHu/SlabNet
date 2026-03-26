@@ -1,0 +1,22 @@
+{
+  "case_id": 492,
+  "family": "vacancy_co_top_3__OOH",
+  "label": "OOH_default_tilt30_az270",
+  "formula": "HBa16Co16O49",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.580141393149772,
+  "stage": "final",
+  "initial_energy_eV": -536.1075439453125,
+  "final_energy_eV": -539.5715942382812,
+  "n_steps": 500,
+  "max_force_eVA": 0.019020048901438713,
+  "converged": false,
+  "site": "neighbor_co_top",
+  "co_idx": 3,
+  "state": "OOH",
+  "orientation": "default_tilt30_az270",
+  "reaction_neighbors": "-O:OH;+H:H2O2;-H:O2",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8631683364260964,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_co_top_3__OOH\\OOH_default_tilt30_az270\\relaxed.cif"
+}

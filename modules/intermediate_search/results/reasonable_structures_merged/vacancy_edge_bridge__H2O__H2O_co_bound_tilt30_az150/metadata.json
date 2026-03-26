@@ -1,0 +1,22 @@
+{
+  "case_id": 202,
+  "family": "vacancy_edge_bridge__H2O",
+  "label": "H2O_co_bound_tilt30_az150",
+  "formula": "H2Ba16Co16O48",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.589561648485137,
+  "stage": "final",
+  "initial_energy_eV": -537.1998291015625,
+  "final_energy_eV": -540.3440551757812,
+  "n_steps": 367,
+  "max_force_eVA": 0.009766190312802792,
+  "converged": true,
+  "site": "vacancy_edge_bridge",
+  "co_idx": 3,
+  "state": "H2O",
+  "orientation": "co_bound_tilt30_az150",
+  "reaction_neighbors": "+O:H2O2;-H:OH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8705360239209801,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_edge_bridge__H2O\\H2O_co_bound_tilt30_az150\\relaxed.cif"
+}

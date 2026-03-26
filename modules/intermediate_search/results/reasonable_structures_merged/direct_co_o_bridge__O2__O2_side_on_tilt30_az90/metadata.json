@@ -1,0 +1,23 @@
+{
+  "case_id": 304,
+  "family": "direct_co_o_bridge__O2",
+  "label": "O2_side_on_tilt30_az90",
+  "formula": "Ba16Co16O50",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.575871909536967,
+  "stage": "final",
+  "initial_energy_eV": -537.279541015625,
+  "final_energy_eV": -539.2214965820312,
+  "n_steps": 240,
+  "max_force_eVA": 0.009822876192629337,
+  "converged": true,
+  "site": "co_o_bridge",
+  "co_idx": 3,
+  "o_idx": 7,
+  "state": "O2",
+  "orientation": "side_on_tilt30_az90",
+  "reaction_neighbors": "-O:O;+H:OOH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8763718979266195,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\direct_co_o_bridge__O2\\O2_side_on_tilt30_az90\\relaxed.cif"
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": 193,
+  "family": "vacancy_co_top_3__OH",
+  "label": "OH_cotop3_h1p70_co_bound_tilt30_az270",
+  "formula": "HBa16Co16O48",
+  "natoms": 81,
+  "energy_per_atom_eV": -6.6076486846547065,
+  "stage": "final",
+  "initial_energy_eV": -532.6417846679688,
+  "final_energy_eV": -535.2195434570312,
+  "n_steps": 560,
+  "max_force_eVA": 0.009888283908367157,
+  "converged": true,
+  "site": "vacancy_co_top_3",
+  "state": "OH",
+  "orientation": "co_bound_tilt30_az270",
+  "anchor_variant": "cotop3",
+  "height_A": 1.7,
+  "deltaE_family_eV": 0.0001220703125,
+  "min_contact_ratio": 0.8736432032715055,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe_completion\\vacancy_co_top_3__OH\\OH_cotop3_h1p70_co_bound_tilt30_az270\\relaxed.cif"
+}

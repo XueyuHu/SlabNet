@@ -1,0 +1,6 @@
+path_id,context,step_index,state,state_label,node_id,final_energy_eV,relative_to_start_eV,delta_from_previous_step_eV,max_force_eVA
+path_25,vacancy_center,0,O2,OO*,vacancy_center__O2__O2_end_on_tilt30_az0,-534.676270,0.000000,0.000000,0.024393
+path_25,vacancy_center,1,OOH,OOH*,vacancy_center__OOH__OOH_default_tilt30_az150,-539.990723,-5.314453,-5.314453,0.009753
+path_25,vacancy_center,2,OH,OH*,vacancy_center__OH__OH_center_h1p40_co_bound_tilt30_az0,-535.135986,-0.459717,4.854736,0.007222
+path_25,vacancy_center,3,H2O,H2O*,vacancy_center__H2O__H2O_center_h2p00_co_bound_tilt30_az0,-539.627747,-4.951477,-4.491760,0.009102
+path_25,vacancy_center,4,H2O2,H2O2*,vacancy_center__H2O2__H2O2_center_h1p80_default_tilt30_az150,-544.707703,-10.031433,-5.079956,0.009864

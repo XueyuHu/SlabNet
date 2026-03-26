@@ -1,0 +1,21 @@
+{
+  "case_id": 27,
+  "family": "vacancy_center__O",
+  "label": "O_atom_tilt0_az0",
+  "formula": "Ba16Co16O48",
+  "natoms": 80,
+  "energy_per_atom_eV": -6.626751708984375,
+  "stage": "final",
+  "initial_energy_eV": -527.2775268554688,
+  "final_energy_eV": -530.14013671875,
+  "n_steps": 179,
+  "max_force_eVA": 0.00612788088619709,
+  "converged": true,
+  "site": "vacancy",
+  "state": "O",
+  "orientation": "atom_tilt0_az0",
+  "reaction_neighbors": "+O:O2;-O:bare;+H:OH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8715883719564892,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_center__O\\O_atom_tilt0_az0\\relaxed.cif"
+}

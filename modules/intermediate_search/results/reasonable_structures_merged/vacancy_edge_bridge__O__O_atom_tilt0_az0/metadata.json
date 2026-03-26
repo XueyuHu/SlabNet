@@ -1,0 +1,22 @@
+{
+  "case_id": 53,
+  "family": "vacancy_edge_bridge__O",
+  "label": "O_atom_tilt0_az0",
+  "formula": "Ba16Co16O48",
+  "natoms": 80,
+  "energy_per_atom_eV": -6.627011108398437,
+  "stage": "final",
+  "initial_energy_eV": -527.04541015625,
+  "final_energy_eV": -530.160888671875,
+  "n_steps": 135,
+  "max_force_eVA": 0.00809353869408369,
+  "converged": true,
+  "site": "vacancy_edge_bridge",
+  "co_idx": 3,
+  "state": "O",
+  "orientation": "atom_tilt0_az0",
+  "reaction_neighbors": "+O:O2;-O:bare;+H:OH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8669858615208897,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_edge_bridge__O\\O_atom_tilt0_az0\\relaxed.cif"
+}

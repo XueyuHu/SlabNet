@@ -1,0 +1,22 @@
+{
+  "case_id": 79,
+  "family": "vacancy_co_top__H2O",
+  "label": "H2O_co_bound_tilt0_az0",
+  "formula": "H2Ba16Co16O48",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.581529570788872,
+  "stage": "final",
+  "initial_energy_eV": -537.4872436523438,
+  "final_energy_eV": -539.6854248046875,
+  "n_steps": 600,
+  "max_force_eVA": 0.016219770535826683,
+  "converged": false,
+  "site": "neighbor_co_top",
+  "co_idx": 3,
+  "state": "H2O",
+  "orientation": "co_bound_tilt0_az0",
+  "reaction_neighbors": "+O:H2O2;-H:OH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8782234942320843,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\vacancy_co_top__H2O\\H2O_co_bound_tilt0_az0\\relaxed.cif"
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": 454,
+  "family": "direct_co_o_bridge__OOH",
+  "label": "OOH_default_tilt30_az300",
+  "formula": "HBa16Co16O50",
+  "natoms": 83,
+  "energy_per_atom_eV": -6.557890742658133,
+  "stage": "final",
+  "initial_energy_eV": -540.44384765625,
+  "final_energy_eV": -544.304931640625,
+  "n_steps": 282,
+  "max_force_eVA": 0.00952011626213789,
+  "converged": true,
+  "site": "co_o_bridge",
+  "co_idx": 3,
+  "o_idx": 7,
+  "state": "OOH",
+  "orientation": "default_tilt30_az300",
+  "reaction_neighbors": "-O:OH;+H:H2O2;-H:O2",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8837893749035977,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\direct_co_o_bridge__OOH\\OOH_default_tilt30_az300\\relaxed.cif"
+}

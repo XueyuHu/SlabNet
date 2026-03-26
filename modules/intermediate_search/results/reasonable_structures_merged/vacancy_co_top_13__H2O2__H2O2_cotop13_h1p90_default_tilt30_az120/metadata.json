@@ -1,0 +1,22 @@
+{
+  "case_id": 266,
+  "family": "vacancy_co_top_13__H2O2",
+  "label": "H2O2_cotop13_h1p90_default_tilt30_az120",
+  "formula": "H2Ba16Co16O49",
+  "natoms": 83,
+  "energy_per_atom_eV": -6.564356792403991,
+  "stage": "final",
+  "initial_energy_eV": -541.311767578125,
+  "final_energy_eV": -544.8416137695312,
+  "n_steps": 730,
+  "max_force_eVA": 0.009771643206477165,
+  "converged": true,
+  "site": "vacancy_co_top_13",
+  "state": "H2O2",
+  "orientation": "default_tilt30_az120",
+  "anchor_variant": "cotop13",
+  "height_A": 1.9,
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8684208936950485,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe_completion\\vacancy_co_top_13__H2O2\\H2O2_cotop13_h1p90_default_tilt30_az120\\relaxed.cif"
+}

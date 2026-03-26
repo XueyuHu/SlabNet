@@ -1,0 +1,5 @@
+path_id,context,step_index,state,state_label,node_id,final_energy_eV,relative_to_start_eV,delta_from_previous_step_eV,max_force_eVA
+path_17,direct_hollow,0,O2,OO*,direct_hollow__O2__O2_side_on_tilt30_az30,-539.864075,0.000000,0.000000,0.009936
+path_17,direct_hollow,1,O,O*,direct_hollow__O__O_atom_tilt0_az0,-534.288818,5.575256,5.575256,0.009368
+path_17,direct_hollow,2,OH,OH*,direct_hollow__OH__OH_co_bound_tilt30_az30,-538.132629,1.731445,-3.843811,0.009497
+path_17,direct_hollow,3,OOH,OOH*,direct_hollow__OOH__OOH_default_tilt30_az0,-544.944580,-5.080505,-6.811951,0.009754

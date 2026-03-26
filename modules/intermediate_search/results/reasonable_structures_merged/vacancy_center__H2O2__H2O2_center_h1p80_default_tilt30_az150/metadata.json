@@ -1,0 +1,22 @@
+{
+  "case_id": 150,
+  "family": "vacancy_center__H2O2",
+  "label": "H2O2_center_h1p80_default_tilt30_az150",
+  "formula": "H2Ba16Co16O49",
+  "natoms": 83,
+  "energy_per_atom_eV": -6.5627434052616715,
+  "stage": "final",
+  "initial_energy_eV": -542.7465209960938,
+  "final_energy_eV": -544.7077026367188,
+  "n_steps": 865,
+  "max_force_eVA": 0.009864486753940582,
+  "converged": true,
+  "site": "vacancy_center",
+  "state": "H2O2",
+  "orientation": "default_tilt30_az150",
+  "anchor_variant": "center",
+  "height_A": 1.8,
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8705001136703505,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe_completion\\vacancy_center__H2O2\\H2O2_center_h1p80_default_tilt30_az150\\relaxed.cif"
+}

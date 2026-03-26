@@ -1,0 +1,21 @@
+{
+  "case_id": 236,
+  "family": "direct_co_top__O2",
+  "label": "O2_end_on_tilt30_az0",
+  "formula": "Ba16Co16O50",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.575717832983994,
+  "stage": "final",
+  "initial_energy_eV": -537.2490234375,
+  "final_energy_eV": -539.2088623046875,
+  "n_steps": 265,
+  "max_force_eVA": 0.008954501710832119,
+  "converged": true,
+  "site": "co_top",
+  "state": "O2",
+  "orientation": "end_on_tilt30_az0",
+  "reaction_neighbors": "-O:O;+H:OOH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8768159063674031,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\direct_co_top__O2\\O2_end_on_tilt30_az0\\relaxed.cif"
+}

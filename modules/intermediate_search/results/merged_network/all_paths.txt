@@ -1,0 +1,76 @@
+path_1 [direct_co_o_bridge] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_2 [direct_co_o_bridge] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_3 [direct_co_o_bridge] (partial): O2 -> OOH -> OH -> O
+path_4 [direct_co_o_bridge] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_5 [direct_co_o_bridge] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_6 [direct_co_o_bridge] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_7 [direct_co_o_bridge] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_8 [direct_co_o_bridge] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_9 [direct_co_o_bridge] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_10 [direct_co_top] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_11 [direct_co_top] (partial): O2 -> OOH -> OH -> O
+path_12 [direct_co_top] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_13 [direct_co_top] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_14 [direct_co_top] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_15 [direct_hollow] (complete): O2 -> O -> OH -> H2O
+path_16 [direct_hollow] (complete): O2 -> OOH -> OH -> H2O
+path_17 [direct_hollow] (partial): O2 -> O -> OH -> OOH
+path_18 [direct_hollow] (partial): O2 -> OOH -> OH -> O
+path_19 [vacancy_center] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_20 [vacancy_center] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_21 [vacancy_center] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_22 [vacancy_center] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_23 [vacancy_center] (partial): O2 -> OOH -> OH -> O
+path_24 [vacancy_center] (partial): O2 -> OOH -> OH -> O
+path_25 [vacancy_center] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_26 [vacancy_center] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_27 [vacancy_center] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_28 [vacancy_center] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_29 [vacancy_center] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_30 [vacancy_center] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_31 [vacancy_center] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_32 [vacancy_center] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_33 [vacancy_center] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_34 [vacancy_center] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_35 [vacancy_center] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_36 [vacancy_center] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_37 [vacancy_co_top_13] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_38 [vacancy_co_top_13] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_39 [vacancy_co_top_13] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_40 [vacancy_co_top_13] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_41 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> O
+path_42 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> O
+path_43 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_44 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_45 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_46 [vacancy_co_top_13] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_47 [vacancy_co_top_13] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_48 [vacancy_co_top_13] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_49 [vacancy_co_top_13] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_50 [vacancy_co_top_13] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_51 [vacancy_co_top_13] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_52 [vacancy_co_top_13] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_53 [vacancy_co_top_13] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_54 [vacancy_co_top_13] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_55 [vacancy_co_top_3] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_56 [vacancy_co_top_3] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_57 [vacancy_co_top_3] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_58 [vacancy_co_top_3] (complete): O2 -> O -> OH -> OOH -> H2O2 -> H2O
+path_59 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> O
+path_60 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> O
+path_61 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_62 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_63 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_64 [vacancy_co_top_3] (partial): O2 -> OOH -> OH -> H2O -> H2O2
+path_65 [vacancy_co_top_3] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_66 [vacancy_co_top_3] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_67 [vacancy_co_top_3] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_68 [vacancy_co_top_3] (partial): O2 -> O -> OH -> H2O -> H2O2 -> OOH
+path_69 [vacancy_co_top_3] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_70 [vacancy_co_top_3] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_71 [vacancy_co_top_3] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_72 [vacancy_co_top_3] (partial): O2 -> OOH -> H2O2 -> H2O -> OH -> O
+path_73 [vacancy_edge_bridge] (complete): O2 -> O -> OH -> H2O
+path_74 [vacancy_edge_bridge] (complete): O2 -> OOH -> OH -> H2O
+path_75 [vacancy_edge_bridge] (partial): O2 -> O -> OH -> OOH
+path_76 [vacancy_edge_bridge] (partial): O2 -> OOH -> OH -> O

@@ -1,0 +1,7 @@
+path_id,context,step_index,state,state_label,node_id,final_energy_eV,relative_to_start_eV,delta_from_previous_step_eV,max_force_eVA
+path_13,direct_co_top,0,O2,OO*,direct_co_top__O2__O2_end_on_tilt30_az0,-539.208862,0.000000,0.000000,0.008955
+path_13,direct_co_top,1,O,O*,direct_co_top__O__O_atom_tilt0_az0,-534.030701,5.178162,5.178162,0.009786
+path_13,direct_co_top,2,OH,OH*,direct_co_top__OH__OH_co_bound_tilt30_az0,-539.273682,-0.064819,-5.242981,0.007941
+path_13,direct_co_top,3,H2O,H2O*,direct_co_top__H2O__H2O_co_bound_tilt0_az0,-544.680481,-5.471619,-5.406799,0.006539
+path_13,direct_co_top,4,H2O2,H2O2*,direct_co_top__H2O2__H2O2_default_tilt0_az0,-548.620911,-9.412048,-3.940430,0.009562
+path_13,direct_co_top,5,OOH,OOH*,direct_co_top__OOH__OOH_default_tilt30_az30,-544.421326,-5.212463,4.199585,0.009943

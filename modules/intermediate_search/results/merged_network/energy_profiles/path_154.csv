@@ -1,0 +1,5 @@
+path_id,context,step_index,state,state_label,node_id,final_energy_eV,relative_to_start_eV,delta_from_previous_step_eV,max_force_eVA
+path_154,vacancy_edge_bridge,0,O2,OO*,vacancy_edge_bridge__O2__O2_end_on_tilt30_az240,-534.991089,0.000000,0.000000,0.014184
+path_154,vacancy_edge_bridge,1,OOH,OOH*,vacancy_edge_bridge__OOH__OOH_default_tilt30_az300,-539.835815,-4.844727,-4.844727,0.015551
+path_154,vacancy_edge_bridge,2,OH,OH*,vacancy_edge_bridge__OH__OH_co_bound_tilt30_az270,-535.297668,-0.306580,4.538147,0.009943
+path_154,vacancy_edge_bridge,3,O,O*,vacancy_edge_bridge__O__O_atom_tilt0_az0,-530.160889,4.830200,5.136780,0.008094

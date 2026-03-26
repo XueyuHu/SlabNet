@@ -1,0 +1,22 @@
+{
+  "case_id": 138,
+  "family": "vacancy_center__H2O",
+  "label": "H2O_offset_y+_h1p90_co_bound_tilt30_az180",
+  "formula": "H2Ba16Co16O48",
+  "natoms": 82,
+  "energy_per_atom_eV": -6.58070410751715,
+  "stage": "final",
+  "initial_energy_eV": -537.364990234375,
+  "final_energy_eV": -539.6177368164062,
+  "n_steps": 475,
+  "max_force_eVA": 0.009575257077813148,
+  "converged": true,
+  "site": "vacancy_center",
+  "state": "H2O",
+  "orientation": "co_bound_tilt30_az180",
+  "anchor_variant": "offset_y+",
+  "height_A": 1.9,
+  "deltaE_family_eV": 0.010009765625,
+  "min_contact_ratio": 0.879657299885841,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe_completion\\vacancy_center__H2O\\H2O_offset_y+_h1p90_co_bound_tilt30_az180\\relaxed.cif"
+}

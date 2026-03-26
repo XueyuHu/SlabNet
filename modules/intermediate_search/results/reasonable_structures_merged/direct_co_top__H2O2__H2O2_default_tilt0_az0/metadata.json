@@ -1,0 +1,21 @@
+{
+  "case_id": 508,
+  "family": "direct_co_top__H2O2",
+  "label": "H2O2_default_tilt0_az0",
+  "formula": "H2Ba16Co16O50",
+  "natoms": 84,
+  "energy_per_atom_eV": -6.531201317196801,
+  "stage": "final",
+  "initial_energy_eV": -544.8450927734375,
+  "final_energy_eV": -548.6209106445312,
+  "n_steps": 254,
+  "max_force_eVA": 0.009562338702380657,
+  "converged": true,
+  "site": "co_top",
+  "state": "H2O2",
+  "orientation": "default_tilt0_az0",
+  "reaction_neighbors": "-O:H2O;-H:OOH",
+  "deltaE_family_eV": 0.0,
+  "min_contact_ratio": 0.8656091896668298,
+  "source_cif": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\intermediates\\orr_search_chgnet_pbe\\direct_co_top__H2O2\\H2O2_default_tilt0_az0\\relaxed.cif"
+}
