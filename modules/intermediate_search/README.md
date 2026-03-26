@@ -2,6 +2,29 @@
 
 This module packages a complete workflow for searching, relaxing, filtering, and connecting surface intermediates on a known slab.
 
+## CLI
+
+The module can be used directly from the repository root with:
+
+```bash
+python -m modules.intermediate_search overview
+python -m modules.intermediate_search paths --status complete
+python -m modules.intermediate_search paths --context vacancy_center --limit 5
+python -m modules.intermediate_search describe
+python -m modules.intermediate_search files
+```
+
+It can also dispatch the original workflow steps:
+
+```bash
+python -m modules.intermediate_search run screen
+python -m modules.intermediate_search run search
+python -m modules.intermediate_search run complete
+python -m modules.intermediate_search run network
+python -m modules.intermediate_search run graph
+python -m modules.intermediate_search run profiles
+```
+
 ## What this module does
 
 - starts from a slab structure in `inputs/POSCAR.cif`
@@ -43,6 +66,13 @@ modules/intermediate_search/
   Draws the reaction-graph visualization.
 - `scripts/build_merged_reaction_profiles.py`
   Merges main and completion results, enumerates maximal pathways, and writes energy profiles.
+
+## Packaged Python entry
+
+- `modules/intermediate_search/__main__.py`
+- `modules/intermediate_search/cli.py`
+
+The CLI exposes both result-inspection commands and workflow-dispatch commands so the module can be used as a reusable component instead of only a folder of scripts and CSV files.
 
 ## Current packaged results
 
