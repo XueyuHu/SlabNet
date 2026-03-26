@@ -18,7 +18,9 @@ This module starts from a bulk structure and enumerates low-index slab terminati
 
 - reads the bulk structure from `surface_cleave/POSCAR.cif` by default
 - generates low-index slabs up to a chosen Miller cutoff
-- saves every returned termination
+- preserves distinct symmetric terminations such as `AO // AO`, `AO // BO2`, and `BO2 // BO2` when they exist
+- expands undersized surface cells in plane before downstream adsorption work
+- can score the generated slabs with the same CHGNet MatPES PBE model used in intermediate search
 - writes both `slab.cif` and a bottom-fixed `slab_relax_ready.vasp`
 - records polarity, symmetry, and termination labels in a summary table
 
@@ -32,8 +34,10 @@ python -m modules.surface_cleave list
 
 Current packaged cleave snapshot for `BaCoO3`:
 
-- generated slab terminations: `6`
+- generated slab terminations: `18`
 - unique low-index surfaces: `6`
+- distinct terminations per hkl: `3`
+- current lateral-size targets: `8.0 A` per in-plane vector and `64.0 A^2` minimum surface area
 - output summary: `modules/surface_cleave/results/generated_slabs/summary.csv`
 
 ### `modules/intermediate_search`

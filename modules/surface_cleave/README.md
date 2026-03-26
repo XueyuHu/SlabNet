@@ -7,6 +7,7 @@ This module takes a bulk structure and generates low-index slabs with all termin
 - reads a bulk structure from `surface_cleave/POSCAR.cif` by default
 - enumerates low-index surfaces up to a chosen `max_index`
 - retains all slab terminations returned by the cleave search
+- preserves distinct symmetric terminations when they can be derived from a stoichiometric slab
 - expands the in-plane cell to avoid overly small adsorption cells
 - writes each slab as both `slab.cif` and `slab_relax_ready.vasp`
 - prepares a relax-ready slab where the bottom half is fixed and the top half is free
@@ -27,12 +28,19 @@ python -m modules.surface_cleave list --hkl 1,0,0
 
 For the bundled `BaCoO3` bulk structure, the current generated library contains:
 
-- `6` slab terminations
+- `18` slab terminations
 - `6` unique low-index Miller surfaces
+- `3` distinct terminations per Miller surface in the current library
 - minimum lateral-size target: `8.0 A`
 - minimum in-plane area target: `64.0 A^2`
 - bundled summary table in `results/generated_slabs/summary.csv`
 - CHGNet-ranked surface energies in the same summary table
+
+Examples now explicitly retained in the packaged `(100)` family:
+
+- `BaO // BaO`
+- `BaO // CoO2`
+- `CoO2 // CoO2`
 
 ## Outputs
 
