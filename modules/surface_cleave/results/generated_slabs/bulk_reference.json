@@ -1,0 +1,12 @@
+{
+  "bulk_formula": "BaCoO3",
+  "bulk_formula_factor": 1.0,
+  "bulk_energy_eV": -33.35948944091797,
+  "bulk_energy_per_formula_unit_eV": -33.35948944091797,
+  "initial_energy_eV": -33.35948944091797,
+  "final_energy_eV": -33.35948944091797,
+  "n_steps": 0,
+  "max_force_eVA": 4.432127411746478e-07,
+  "converged": true,
+  "model_dir": "C:\\Users\\wkw99\\OneDrive\\Desktop\\SlabNet\\matgl\\pretrained_models\\CHGNet-MatPES-PBE-2025.2.10-2.7M-PES"
+}
